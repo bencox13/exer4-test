@@ -29,3 +29,9 @@ jobs:
         with:
           name: Upload Build Artifact
           path: build
+  deploy:
+     runs-on: ubuntu-latest
+     needs: build
+     environment:
+       name: production
+       url: http://probable-page.surge.sh
