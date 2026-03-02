@@ -43,7 +43,7 @@ jobs:
          with:
            name: Upload Build Artifact
        - name: deploy to surge
-         run: npx surge --project ‘.’ --domain probable-page.surge.sh
+         run: npx surge --project '.' --domain probable-page.surge.sh
          env:
            SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
            SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
